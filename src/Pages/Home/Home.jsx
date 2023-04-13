@@ -1,12 +1,13 @@
 import React from 'react';
 import Banner from '../../components/Banner';
-import JobCategory from '../../components/JobsCatagory/JobCategory ';
+
+import JobsCategory from '../../components/JobCatagory/JobsCatagory';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <JobCategory></JobCategory>
+            <JobsCategory></JobsCategory>
 
         </div>
     );
