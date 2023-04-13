@@ -8,12 +8,15 @@ import Statistics from './Pages/Statistics/Statistics'
 import AppliedJobs from './Pages/AppliedJobs/AppliedJobs'
 import Blog from './Pages/Blog/Blog'
 import JobDetails from './Pages/Jobdetails/JobDetails'
+import NotFound from './Pages/NotFound/NotFound'
+import ErrorPage from './Pages/ErrorPage/ErrorPage'
 
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path:'/',
@@ -36,8 +39,8 @@ const router = createBrowserRouter([
         element: <JobDetails></JobDetails>
       },
       {
-        path:'/',
-        element: <Home></Home>
+        path:"*",
+        element: <NotFound></NotFound>
       },
     ]
   }
