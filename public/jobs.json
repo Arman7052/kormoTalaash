@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "company_logo": "https://i.ibb.co/W313nC6/google-1-1-1.png",
+        "job_title": "Software Engineer",
+        "company_name": "Google",
+        "remote_or_onsite": "Remote",
+        "location": "Gulshan, Dhaka, Bangladesh",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$120,000 - $200,000",
+        "job_description": "Design, develop, test, deploy, maintain and improve software.",
+        "job_responsibility": "Write server-side code for web-based applications, create robust high-volume production applications, and develop prototypes quickly.",
+        "educational_requirements": "BS degree in Computer Science or related technical field or equivalent practical experience.",
+        "experiences": "2+ years of experience in software development.",
+        "contact_information": {
+            "phone": "(123) 456-7890",
+            "email": "jobs@google.com"
+        }
+    },
+    {
+        "id": 2,
+        "company_logo": "https://i.ibb.co/3hLxV3N/Group-10021.png",
+        "job_title": "Product Manager",
+        "company_name": "Airbnb",
+        "remote_or_onsite": "Remote",
+        "location": "Banani, Dhaka, Bangladesh",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$120,000 - $180,000",
+        "job_description": "Develop and execute a product strategy and roadmap.",
+        "job_responsibility": "Work with cross-functional teams to design, build and roll-out products, and create buy-in for the product vision.",
+        "educational_requirements": "Bachelor’s degree in computer science or related field, or equivalent experience.",
+        "experiences": "5+ years of product management or related experience.",
+        "contact_information": {
+            "phone": "(123) 456-7890",
+            "email": "jobs@airbnb.com"
+        }
+    },
+    {
+        "id": 3,
+        "company_logo": "https://i.ibb.co/4mXzWzV/tesla-9-1.png",
+        "job_title": "Mechanical Engineer",
+        "company_name": "Tesla",
+        "remote_or_onsite": "Onsite",
+        "location": "Mohakhali, Dhaka, Bangladesh",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$100,000 - $150,000",
+        "job_description": "Design and develop mechanical systems and components for Tesla vehicles.",
+        "job_responsibility": "Work with cross-functional teams to ensure design and manufacturing feasibility, and develop test plans and perform testing.",
+        "educational_requirements": "BS in Mechanical Engineering or equivalent experience.",
+        "experiences": "3+ years of experience in automotive or related industry.",
+        "contact_information": {
+            "phone": "(123) 456-7890",
+            "email": "jobs@tesla.com"
+        }
+    },
+    {
+        "id": 4,
+        "company_logo": "https://i.ibb.co/Drt3DS2/netflix-4-1.png",
+        "job_title": "Software Engineer",
+        "company_name": "Netflix",
+        "remote_or_onsite": "Remote",
+        "location": "Agrabad, Chittagong, Bangladesh",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$150,000 - $200,000",
+        "job_description": "We are looking for an experienced software engineer to help build and maintain the Netflix platform. You will work on a variety of projects, including developing new features, improving performance, and fixing bugs.",
+        "job_responsibility": "Design, develop, and maintain software applications for the Netflix platform. Collaborate with other engineers and product managers to deliver high-quality features. Write clean, efficient, and maintainable code. Identify and fix bugs and performance issues. Participate in code reviews and provide constructive feedback to other engineers.",
+        "educational_requirements": "Bachelor's degree in Computer Science, Engineering, or a related field",
+        "experiences": "3+ years of experience in software engineering",
+        "contact_information": {
+            "phone": "555-555-5555",
+            "email": "jobs@netflix.com"
+        }
+    },
+    {
+        "id": 5,
+        "company_logo": "https://i.ibb.co/W313nC6/google-1-1-1.png",
+        "job_title": "Product Designer",
+        "company_name": "Google",
+        "remote_or_onsite": "Onsite",
+        "location": "Nasirabad, Chittagong, Bangladesh",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$120,000 - $150,000",
+        "job_description": "As a product designer at Google, you will be responsible for designing innovative and engaging products for our users. You will work closely with product managers, engineers, and other designers to create user flows, wireframes, and high-fidelity mockups.",
+        "job_responsibility": "Design user interfaces and experiences for Google products. Collaborate with cross-functional teams to define and implement product features. Conduct user research and testing to validate design decisions. Create wireframes, prototypes, and high-fidelity mockups. Communicate design concepts and ideas to stakeholders.",
+        "educational_requirements": "Bachelor's degree in Design, HCI, or a related field",
+        "experiences": "3+ years of experience in product design",
+        "contact_information": {
+            "phone": "555-555-5555",
+            "email": "jobs@google.com"
+        }
+    },
+    {
+        "id": 6,
+        "company_logo": "https://i.ibb.co/4mXzWzV/tesla-9-1.png",
+        "job_title": "Software Engineer",
+        "company_name": "Tesla Inc.",
+        "remote_or_onsite": "Onsite",
+        "location": "Zindabazar, Sylhet, Bangladesh",
+        "fulltime_or_parttime": "Fulltime",
+        "salary": "$120,000 - $180,000",
+        "job_description": "Tesla is seeking an experienced software engineer to join our team. The ideal candidate will have a strong background in computer science and experience working with large-scale systems.",
+        "job_responsibility": "Responsibilities include designing and implementing software systems, collaborating with cross-functional teams, and participating in code reviews.",
+        "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field.",
+        "experiences": "5+ years of software development experience.",
+        "contact_information": {
+            "phone": "555-123-4567",
+            "email": "jobs@tesla.com"
+        }
+    }
+]
