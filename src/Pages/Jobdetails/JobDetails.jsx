@@ -1,10 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 const JobDetails = () => {
     const job = useLoaderData();
     const { id, company_logo, job_title, company_name, remote_or_onsite, fulltime_or_parttime, location, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = job;
     //    console.log(job);
+
+    const [applied, setApplied] = useState(false)
+
+    useEffect(() => {
+        const storedData = JSON.parse(localStorage.getItem("apply"));
+        if (storedData) {
+            const exist = storedData.find(item => item.id == id);
+            if (exist) {
+                setApplied(true)
+            }
+
+        }
+    }, [job])
+
+
+    const handleApply = () => {
+        const storedData = JSON.parse(localStorage.getItem("apply"));
+
+
+        if (storedData) {
+            localStorage.setItem("apply", JSON.stringify([...storedData, job]))
+
+        } else {
+            localStorage.setItem("apply", JSON.stringify([job]))
+        }
+        setApplied(true)
+
+    }
+
     return (
         <div className=' text-center bg-indigo-50'>
             <h1 className=' font-bold text-3xl py-10 text-indigo-300'>Job Details</h1>
@@ -53,7 +82,16 @@ const JobDetails = () => {
                         </div>
                     </div>
                     <div className='py-3 pt-3'>
-                        <button className=' bg-indigo-400 w-full rounded-md py-2 text-white font-bold'>Apply Now</button>
+                        <button onClick={handleApply} className=' bg-indigo-400 w-full rounded-md py-2 text-white font-bold'>
+
+                            {
+                                applied ?
+                                    "Already Applied"
+                                    :
+                                    " Apply Now"
+                            }
+
+                        </button>
                     </div>
 
                 </div>
