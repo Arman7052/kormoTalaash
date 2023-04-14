@@ -4,35 +4,32 @@ import { useLoaderData } from 'react-router-dom';
 const JobDetails = () => {
     const job = useLoaderData();
     const { id, company_logo, job_title, company_name, remote_or_onsite, fulltime_or_parttime, location, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = job;
-    //    console.log(job);
 
-    const [applied, setApplied] = useState(false)
 
+    const [applied, setApplied] = useState(false);
     useEffect(() => {
-        const storedData = JSON.parse(localStorage.getItem("apply"));
+        const storedData = JSON.parse(localStorage.getItem("applieds"));
         if (storedData) {
             const exist = storedData.find(item => item.id == id);
             if (exist) {
                 setApplied(true)
             }
-
         }
     }, [job])
 
-
     const handleApply = () => {
-        const storedData = JSON.parse(localStorage.getItem("apply"));
-
+        const storedData = JSON.parse(localStorage.getItem("applieds"));
 
         if (storedData) {
-            localStorage.setItem("apply", JSON.stringify([...storedData, job]))
+            localStorage.setItem("applieds", JSON.stringify([...storedData, job]))
 
         } else {
-            localStorage.setItem("apply", JSON.stringify([job]))
+            localStorage.setItem("applieds", JSON.stringify([job]))
         }
         setApplied(true)
 
     }
+
 
     return (
         <div className=' text-center bg-indigo-50'>
@@ -82,13 +79,12 @@ const JobDetails = () => {
                         </div>
                     </div>
                     <div className='py-3 pt-3'>
-                        <button onClick={handleApply} className=' bg-indigo-400 w-full rounded-md py-2 text-white font-bold'>
-
+                        <button disabled={applied} onClick={handleApply} className="btn btn-primary">
                             {
                                 applied ?
                                     "Already Applied"
                                     :
-                                    " Apply Now"
+                                    "Apply Now"
                             }
 
                         </button>
