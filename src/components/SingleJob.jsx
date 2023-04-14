@@ -27,7 +27,7 @@ const SingleJob = ({job}) => {
             </div>
         </div>
         <div className='text-start p-4'>
-           <Link to={`/Jobs/${id}`}>
+           <Link to={`/jobDetails/${id}`}>
            <button className=' bg-indigo-400 p-3 rounded-lg text-white font-bold w-40'>View Details</button></Link>
         </div>
     </div>

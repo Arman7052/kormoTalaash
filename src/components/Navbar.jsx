@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
        
-            <nav className='flex items-center justify-between flex-wrap bg-blue-50 px-20 py-10'>
+            <nav className='flex items-center justify-between flex-wrap bg-indigo-50 px-20 py-10'>
               <div className='flex items-center flex-shrink-0 text-gray-800 mr-6'>
                 <h1 className='text-xl font-bold'>
                   <Link to='/'>KormoTalaash</Link>

@@ -41,12 +41,13 @@ const Statistics = () => {
     const customAxisTick = ({ payload, x, y, textAnchor, stroke }) => (
         <g transform={`translate(${x},${y})`}>
             <text
+               
                 x={0}
                 y={0}
                 dy={16}
                 textAnchor={textAnchor}
                 fill="#666"
-                fontSize={10}
+                fontSize={30}
             >
                 {payload.value}
             </text>
@@ -56,7 +57,10 @@ const Statistics = () => {
     const averageMark = data.reduce((total, item) => total + item.mark, 0) / data.length;
 
     return (
+        <div className=' text-center bg-indigo-50'>
+              <h1 className=' font-bold text-3xl py-10 text-indigo-300'>Statistics</h1>
         <div className='py-10 pb-20 text-center bg-indigo-50'>
+            
             <div>
                 <h1 className=' py-5 text-2xl lg:text-4xl font-bold'>This page shows marks gained in Assignments</h1>
             </div>
@@ -64,14 +68,14 @@ const Statistics = () => {
                 <p className=' text-xl lg:text-3xl  text-indigo-300'>Average Mark: <span className=' font-bold  text-gray-400'>{averageMark.toFixed(2)}</span></p>
             </div>
 
-            <ResponsiveContainer width="100%" aspect={2}>
+            <ResponsiveContainer width="100%" aspect={2.5}>
                 <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
-                    <PolarGrid radialLines={false} />
+                    <PolarGrid radialLines={true} />
                     <PolarAngleAxis
                         dataKey="Assignment"
                         tick={customAxisTick}
                         axisLine={{ stroke: "#666", strokeWidth: 1.5 }}
-                        tickLine={false}
+                        tickLine={true}
                     />
                     <PolarRadiusAxis
                         stroke="#666"
@@ -84,7 +88,7 @@ const Statistics = () => {
                         axisLine={{ stroke: "#666", strokeWidth: 1.5 }}
                     />
                     <Radar
-                        name="Assignment"
+                        name="Mark"
                         dataKey="mark"
                         stroke="#ca3e47"
                         fill="#ca3e47"
@@ -96,6 +100,8 @@ const Statistics = () => {
             </ResponsiveContainer>
            
         </div>
+        </div>
+      
     );
 };
 
