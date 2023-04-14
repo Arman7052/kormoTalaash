@@ -28,9 +28,9 @@ const AppliedJobs = () => {
 
             <div className="my-3">
                 <label htmlFor="">Filter by: </label>
-                <select onChange={handleFilter} className="select select-bordered w-auto max-w-xs ml-2">
+                <select onChange={handleFilter} className="select select-bordered w-full max-w-xs ml-2">
                     <option disabled selected>
-                        Select
+                    Select
                     </option>
                     <option value="Remote">Remote</option>
                     <option value="Onsite">Onsite</option>
